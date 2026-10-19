@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Nisba CP, UI UX Designer</title>
+<title>Nisba CP, UI/UX &amp; Graphic Designer</title>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@400;500&family=Playfair+Display:wght@500&family=Poppins:wght@500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 <style>
 :root{--cream:#f3efe6;--ink:#191a15;--or:#d54600;--mut:#6e6b61;--line:#d9d3c4;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -34,9 +34,11 @@ nav ul a:hover:after{transform:scaleX(1);transform-origin:left}
 .hl{position:relative;z-index:2}
 .role{font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--or);font-weight:500;display:flex;align-items:center;gap:12px}
 .role:before{content:"";width:34px;height:2px;background:var(--or)}
-.rot{display:inline-block;height:1.6em;overflow:hidden;vertical-align:bottom}
-.rot span{display:block;animation:rot 9s infinite;height:1.6em}
-@keyframes rot{0%,28%{transform:translateY(0)}33%,61%{transform:translateY(-100%)}66%,94%{transform:translateY(-200%)}100%{transform:translateY(-300%)}}
+.rot{display:inline-block;height:1.6em;overflow:hidden;vertical-align:bottom;max-width:100%}
+.rot .ri{display:block;animation:rot 12s infinite;animation-timing-function:cubic-bezier(.7,0,.2,1)}
+.rot .ri span{display:block;height:1.6em;line-height:1.6em;white-space:nowrap}
+@media(max-width:600px){.role{letter-spacing:.2em;font-size:12px;gap:10px}.role:before{width:26px}}
+@keyframes rot{0%,20%{transform:translateY(0)}25%,45%{transform:translateY(-20%)}50%,70%{transform:translateY(-40%)}75%,95%{transform:translateY(-60%)}100%{transform:translateY(-80%)}}
 .name{font-size:clamp(84px,15vw,200px);font-weight:800;margin:22px 0 10px;line-height:.82}
 .name .ch{display:inline-block;transform:translateY(110%);animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--i)*.07s + .1s)}
 .name .ln{display:block;overflow:hidden;padding-bottom:.08em}
@@ -323,7 +325,7 @@ img,video{max-width:100%}
 
 <header class="hero" id="top"><div class="wrap">
 <div class="hl">
-<div class="role"><span class="rot"><span>UI/UX Designer</span><span>AI-assisted Product Designer</span><span>Figma Designer</span><span>UI/UX Designer</span></span></div>
+<div class="role"><span class="rot"><span class="ri"><span>UI/UX Designer</span><span>Figma Designer</span><span>Graphic Designer</span><span>AI-assisted Product Designer</span><span>UI/UX Designer</span></span></span></div>
 <h1 class="name" id="name"><span class="ln">Nisba</span><span class="ln or">CP.</span></h1>
 <p class="lead">Designing intuitive, modern, AI-powered digital experiences that bridge the gap between human emotion and technological precision.</p>
 <div class="cta-row"><a class="btn p" href="#work">See my work <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a><a class="btn" href="#contact">Say hello</a></div>
